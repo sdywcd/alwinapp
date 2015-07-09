@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/login_bg"
+            android:orientation="vertical"
+
+            ></LinearLayout>
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/username_hint"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="@color/graytext"
+            android:textSize="16sp">
+
+            <requestFocus />
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/pwd_hint"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="@color/graytext"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/host"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:text="192.168.1.180"
+            android:textColor="@color/graytext"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/port"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:text="8100"
+            android:textColor="@color/graytext"
+            android:textSize="16sp" />
+
+        <Button
+
+            android:id="@+id/login_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:background="#428BCA"
+            android:textColor="#FFF"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="22sp"
+            android:text="@string/login_text" />
+    </LinearLayout>
+
+</RelativeLayout>
